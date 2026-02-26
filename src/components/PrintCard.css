@@ -1,0 +1,161 @@
+.print-card {
+  background-color: var(--中性-白色);
+  border-radius: 12px;
+  box-shadow: 0px 6px 14px 0px #F0F2FA;
+  padding: 8px 16px;
+  width: 508px;
+  height: 268px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.print-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.print-title h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--中性-标题正文);
+  margin: 0;
+}
+
+.print-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.action-btn {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  border-radius: 5.33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 2.67px;
+  transition: all 0.2s ease;
+}
+
+.action-btn:hover {
+  background-color: var(--蓝色背景色);
+}
+
+.scissor-icon {
+  width: 26px;
+  height: 26px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scissor-icon::before {
+  content: '✂️';
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.more-icon {
+  width: 16px;
+  height: 16px;
+  position: relative;
+}
+
+.more-icon::before {
+  content: '⋯';
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.drop-zone {
+  flex: 1;
+  background-color: #F5F9FF;
+  border: 1px dashed var(--状态-提示-默认);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 120px;
+  padding: 8px;
+}
+
+.drop-zone:hover {
+  background-color: #EEF5FF;
+  border-color: #3A7FDD;
+}
+
+.drop-zone.dragging {
+  background-color: #EEF5FF;
+  border-color: #3A7FDD;
+  border-style: solid;
+}
+
+.drop-zone-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+}
+
+.upload-icon {
+  width: 90px;
+  height: 72px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-icon::before {
+  content: '📁';
+  font-size: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.drop-zone-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--中性-标题正文);
+  margin: 0;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.add-files-btn {
+  background-color: transparent;
+  color: var(--奔图品牌-蓝-默认);
+  border: none;
+  padding: 4px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  align-self: center;
+}
+
+.add-files-btn:hover {
+  background-color: var(--蓝色背景色);
+}

@@ -1,0 +1,171 @@
+/* 全局样式变量 */
+:root {
+  --中性-白色: #FFFFFF;
+  --中性-标题正文: #272727;
+  --中性-边界分割线: #E0E0E0;
+  --中性-Font3: #8B8C8C;
+  --状态-提示-默认: #4392FF;
+  --奔图品牌-蓝-默认: #4392FF;
+  --容器底红色: #FCEFEF;
+  --蓝色背景色: #EEF5FF;
+  --页面背景色: #F2F4FA;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Han Sans CN', 'PingFang SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--页面背景色);
+  color: var(--中性-标题正文);
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: var(--页面背景色);
+}
+
+.content-area {
+  position: absolute;
+  left: 104px;
+  top: 72px;
+  right: 0;
+  bottom: 0;
+  padding: 8px 16px;
+}
+
+/* 通用字体样式 */
+.font-regular {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.text-sm {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.text-base {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.text-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* 通用布局 */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 8px;
+}
+
+.gap-3 {
+  gap: 12px;
+}
+
+.gap-4 {
+  gap: 16px;
+}
+
+/* 通用卡片样式 */
+.card {
+  background-color: var(--中性-白色);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 6px 14px 0px #F0F2FA;
+}
+
+.card-padding {
+  padding: 8px 16px;
+}
+
+/* 通用按钮样式 */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 22px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  outline: none;
+}
+
+.btn-primary {
+  background-color: var(--奔图品牌-蓝-默认);
+  color: var(--中性-白色);
+}
+
+.btn-primary:hover {
+  background-color: #3A7FDD;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--奔图品牌-蓝-默认);
+  border: 1px solid var(--奔图品牌-蓝-默认);
+}
+
+.btn-secondary:hover {
+  background-color: var(--蓝色背景色);
+}
+
+.btn-text {
+  background-color: transparent;
+  color: var(--奔图品牌-蓝-默认);
+  padding: 4px;
+}
+
+.btn-text:hover {
+  background-color: var(--蓝色背景色);
+  border-radius: 4px;
+}

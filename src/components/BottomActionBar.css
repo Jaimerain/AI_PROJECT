@@ -1,0 +1,93 @@
+.bottom-action-bar {
+  position: absolute;
+  left: 104px;
+  bottom: 0;
+  right: 0;
+  height: 72px;
+  background-color: var(--中性-白色);
+  border-top: 1px solid var(--中性-边界分割线);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  z-index: 10;
+}
+
+.action-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 22px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  outline: none;
+  font-weight: 400;
+}
+
+.action-btn.secondary {
+  background-color: transparent;
+  color: var(--中性-Font3);
+  border: 1px solid var(--中性-边界分割线);
+}
+
+.action-btn.secondary:hover {
+  background-color: var(--蓝色背景色);
+  color: var(--奔图品牌-蓝-默认);
+  border-color: var(--奔图品牌-蓝-默认);
+}
+
+.action-btn.primary {
+  background-color: var(--奔图品牌-蓝-默认);
+  color: var(--中性-白色);
+}
+
+.action-btn.primary:hover {
+  background-color: #3A7FDD;
+}
+
+.action-btn:active {
+  transform: translateY(1px);
+}
+
+.btn-icon {
+  font-size: 16px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .bottom-action-bar {
+    left: 0;
+    padding: 0 16px;
+  }
+  
+  .action-group {
+    gap: 8px;
+  }
+  
+  .action-btn {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+  
+  .action-btn span {
+    display: none;
+  }
+  
+  .action-btn .btn-icon {
+    font-size: 14px;
+  }
+}
